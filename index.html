@@ -1,28 +1,75 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/style.css">
 	<script src="js/main.js" defer></script>
 	<title>ポートフォリオ公開サイト</title>
 </head>
-<body>
-    <h1>ポリテク太郎のポートフォリオ公開サイト</h1>
-    <h2 class="reveal">自己紹介</h2>
-    <p>
-        エンジニアを目指して職業訓練校で勉強中です<br>
-        現在4か月目で、Java、SQL（MySQL）、Git、GitHubの使い方を学びました。<br>
-        このページでは学んだことを生かして作成したポートフォリオを公開しています。
-    </p>
-	<h2>スキル</h2>
-	<p>Java、MySQL、Git</p>
-	<h2>連絡先</h2>
-	<p>tel:1234-5678</p>
-	<p>email:aaaa@aaaa.com</p>
 
-   <h2 class="reveal">ポートフォリオ</h2>
-    <p calss = "portfolio-card">portfolio03</p>
-	<button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false">ダークモード</button>
+<body>
+	<h1>ポリテク太郎のポートフォリオ公開サイト</h1>
+	<h2 class="reveal">自己紹介</h2>
+	<p>
+		エンジニアを目指して職業訓練校で勉強中です<br>
+		現在4か月目で、Java、SQL（PostgreSQL、SQLite）、Git、GitHubの使い方を学びました。<br>
+		このページでは学んだことを生かして作成したポートフォリオを公開しています。
+	</p>
+	
+
+	<h2 class="reveal">ポートフォリオ</h2>
+	<div class="portfolio-grid">
+	    <!-- 作品1：portfolio03 -->
+	    <article class="portfolio-card reveal">
+	        <div class="portfolio-image">
+	            <span>PROJECT 01</span>
+	        </div>
+	        <div class="portfolio-content">
+	            <h3>portfolio03</h3>
+	            <p class="portfolio-description">
+	                学習成果として制作している
+	                ポートフォリオプロジェクトです。
+	            </p>
+	            <div class="portfolio-tags">
+	                <span>GitHub</span>
+	                <span>Portfolio</span>
+	            </div>
+	            <a class="portfolio-link"
+	               href="https://github.com/yoshiffdq-ux/yoshiffdq-ux.github.io"
+	               target="_blank"
+	               rel="noopener noreferrer">
+	                GitHubで見る →
+	            </a>
+	        </div>
+	    </article>
+
+	    <!-- 作品2：今後追加予定 -->
+	    <article class="portfolio-card reveal">
+	        <div class="portfolio-image portfolio-image-next">
+	            <span>COMING SOON</span>
+	        </div>
+	        <div class="portfolio-content">
+	            <h3>次の制作物</h3>
+	            <p class="portfolio-description">
+	                新しく制作したアプリケーションを
+	                ここに追加する予定です。
+	            </p>
+	            <div class="portfolio-tags">
+	                <span>Coming Soon</span>
+	            </div>
+	        </div>
+	    </article>
+	</div>
+	
+	<h2 class="reveal">連絡先</h2>
+	<p>email：aaaa@aaaa.com</p>
+	<p>TEL：000-0000-0000</p>
+	
+	<button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false">
+		🌙 ダークモード
+	</button>
 </body>
+
 </html>
